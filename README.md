@@ -78,24 +78,36 @@ eigenvalues, eigenvectors = np.linalg.eig(a)
 print(eigenvalues)
 print(eigenvectors)
 ```
+## .shape
+<code style="color: red"> .shape </code> --> Get the Shape of an Array​​, NumPy arrays have an attribute called shape that returns a tuple with each index having the number of corresponding elements.
 ```python
 import numpy as np 
-
 a = np.array([[1,6,2],[3,4,3]]) # multi-dimentional array
-print(a)
-# print(a.shape) # shape gives the no of rows and no of column
-
+print(a.shape) # shape gives the no of rows and no of column
+```
+Numpy array slicing
+```python
 print(a[0,:]) # outputs: [1 6 2]
 print(a[:,0]) # outputs [1,3]
+```
+### Transpose matrix
+```python
 print(a.T) # transpose array, outputs: [[1 3]
                                     #   [6 4]
-                                    #   [2 3]] 
-
+                                    #   [2 3]]
+```
+### np.diag(attribute)
+```python
 c = np.diag(a) # this will give digonals matrix of a
 print(np.diag(a)) # on doing double diagonals we are getting identity matrix  
-
+```
+### Arrange data
+```python
 d = np.arange(1,9)
 print(d)
+```
+### Reshape 
+```python
 print(d.shape)
 e = d.reshape(2,4) # this will shape the matrix into 2x4 matrix
 print(e)
