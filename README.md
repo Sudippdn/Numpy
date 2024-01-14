@@ -78,12 +78,19 @@ eigenvalues, eigenvectors = np.linalg.eig(a)
 print(eigenvalues)
 print(eigenvectors)
 ```
-## .shape
+## np.arrnage, .shape and .reshape
+<code style="color: red"> np.arrange </code> --> takes two attributes and display the range values while printing.
 <code style="color: red"> .shape </code> --> Get the Shape of an Array​​, NumPy arrays have an attribute called shape that returns a tuple with each index having the number of corresponding elements.
+<code style="color: red"> .reshape </code> --> Reshape will make a matrix form from the arrange. So, it depends upon if arrange has proper elements or not.
 ```python
 import numpy as np 
-a = np.array([[1,6,2],[3,4,3]]) # multi-dimentional array
-print(a.shape) # shape gives the no of rows and no of column
+a = np.arrange(8,14)
+b = a.shape # shape gives the no of rows and no of column
+c = b.reshape(2,4)
+print(c)
+# outputs: [ 6  7  8  9 10 11 12 13] # print(a)
+            [[ 6  7  8  9]
+             [10 11 12 13]]
 ```
 Numpy array slicing
 ```python
