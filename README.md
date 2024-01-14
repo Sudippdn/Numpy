@@ -79,9 +79,9 @@ print(eigenvalues)
 print(eigenvectors)
 ```
 ## np.arrnage, .shape and .reshape
-<code style="color: red"> np.arrange </code> --> takes two attributes and display the range values while printing.
-<code style="color: red"> .shape </code> --> Get the Shape of an Array​​, NumPy arrays have an attribute called shape that returns a tuple with each index having the number of corresponding elements.
-<code style="color: red"> .reshape </code> --> Reshape will make a matrix form from the arrange. So, it depends upon if arrange has proper elements or not.
+<code style="color: red"> np.arrange(starting, ending) </code> --> takes two attributes and display the range values while printing.                                                
+        <code style="color: red"> .shape </code> --> Get the Shape of an Array​​, NumPy arrays have an attribute called shape that returns a tuple with each index having the number of corresponding elements.                              
+<code style="color: red"> .reshape(rows, columns) </code> --> Reshape will make a matrix form from the arrange. So, it depends upon if arrange has proper elements or not.
 ```python
 import numpy as np 
 a = np.arrange(8,14)
