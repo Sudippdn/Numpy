@@ -13,7 +13,7 @@ l2 = [1,2,3]
 
 a1 = np.array([1,2,3])
 a2 = a1 * np.array([1,2,3])
-print(a1,a2) output = [1 2 3] [1 4 9]
+print(a1,a2) # output = [1 2 3] [1 4 9]
 ```
 ### a. Dot Product using list
 ```python
