@@ -85,19 +85,12 @@ print("np.dot", t2)
 print("ratio:", t1/t2)
 print(" ")
 ```
-## EigenValue and EigenVectors
-Numpy is widely used in mathematics and this python library makes it easy to calculate eigenValue and eigenVectosrs
-```python
-import numpy as np 
-
-a = np.array([[1,2],[3,4]])
-eigenvalues, eigenvectors = np.linalg.eig(a)
-print(eigenvalues)
-print(eigenvectors)
-```
-## np.arrnage, .shape and .reshape
+## arrnage, shape and reshape
 <code style="color: red"> np.arrange(starting, ending) </code> --> takes two attributes and display the range values while printing.                                                
-        <code style="color: red"> .shape </code> --> Get the Shape of an Array​​, NumPy arrays have an attribute called shape that returns a tuple with each index having the number of corresponding elements.                              
+<code style="color: red"> shape </code> --> Get the Shape of an Array​​, NumPy arrays have an attribute called shape that returns a tuple with each index having the number of corresponding elements.   
+
+ ![](https://github.com/Sudippdn/Numpy/blob/main/Image/shape.png)
+
 <code style="color: red"> .reshape(rows, columns) </code> --> Reshape will make a matrix form from the arrange. So, it depends upon if arrange has proper elements or not.
 ```python
 import numpy as np 
@@ -114,12 +107,15 @@ Numpy array slicing
 print(a[0,:]) # outputs: [1 6 2]
 print(a[:,0]) # outputs [1,3]
 ```
+![](https://github.com/Sudippdn/Numpy/blob/main/Image/slicing.png)
 ### Transpose matrix
 ```python
 print(a.T) # transpose array, outputs: [[1 3]
                                     #   [6 4]
                                     #   [2 3]]
 ```
+## Array attributes of NumPy
+This section covers the ndim, shape, size, dig, and dtype attributes of an array.
 ### np.diag(attribute)
 ```python
 c = np.diag(a) # this will give digonals matrix of a
@@ -136,6 +132,18 @@ print(d.shape)
 e = d.reshape(2,4) # this will shape the matrix into 2x4 matrix
 print(e)
 ```
+
+## EigenValue and EigenVectors
+Numpy is widely used in mathematics and this python library makes it easy to calculate eigenValue and eigenVectosrs
+```python
+import numpy as np 
+
+a = np.array([[1,2],[3,4]])
+eigenvalues, eigenvectors = np.linalg.eig(a)
+print(eigenvalues)
+print(eigenvectors)
+```
+
 ## Linear Algebra
 ```python
 import numpy as np 
