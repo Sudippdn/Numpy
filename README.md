@@ -1,7 +1,7 @@
 **I will be uploading Numpy documentations here**
 # Numpy
 <code style="color: red"> Numpy </code>
-is a python library that is used while working with array. In the this library, we can differenciate between array and list and while calculating the execution time, we found numpy executes more than 180 times faster than list. It can be use to calculate eigen values and eigenvectors of a matrices. Numpy also contais in-build function to interpret linear algebra which are shown below along with the examples.
+(Numerical Python) is a python library that provides multidimentional array. Numpy has ndarray at its core which encapsulated n-dimentional array of the homogeneous data type. In the this library, we can differenciate between array and list and while calculating the execution time, we found numpy executes more than 180 times faster than list. It can be use to calculate eigen values and eigenvectors of a matrices. Numpy also contais in-build function to interpret linear algebra which are shown below along with the examples.
 
 ## Differnce between numpy and list
 
