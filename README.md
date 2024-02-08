@@ -81,7 +81,7 @@ print("np.dot", t2)
 print("ratio:", t1/t2)
 print(" ")
 ```
-#### While runing the above code, if found that arra is more than 130 times faster than Python list
+#### *While runing the above code, if is found that array is 125+ times faster than Python list*
 ![](https://github.com/Sudippdn/Numpy/blob/main/Image/LvAExecution%20TIme.png)
 
 ## arrnage, shape and reshape
