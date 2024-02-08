@@ -19,19 +19,15 @@ TO import NumPy module in your, use the following code:
 You can implement array in NumPy by passing list inside the argument(paranthesis).
 
 ![](https://github.com/Sudippdn/Numpy/blob/main/Image/ArrayinNumpy.png)
-## Differnce between numpy and list
 
-### Inputs
 ```python
 import numpy as np 
-
-l1 = [1,2,3]
-l2 = [1,2,3]
-
 a1 = np.array([1,2,3])
 a2 = a1 * np.array([1,2,3])
 print(a1,a2) # output = [1 2 3] [1 4 9]
 ```
+# ![Differnce between numpy and list](https://github.com/Sudippdn/Numpy)
+## Dot product between python list and NumPy array
 ### a. Dot Product using list
 ```python
 dot = 0
@@ -85,6 +81,9 @@ print("np.dot", t2)
 print("ratio:", t1/t2)
 print(" ")
 ```
+#### While runing the above code, if found that arra is more than 130 times faster than Python list
+![](https://github.com/Sudippdn/Numpy/blob/main/Image/LvAExecution%20TIme.png)
+
 ## arrnage, shape and reshape
 <code style="color: red"> np.arrange(starting, ending) </code> --> takes two attributes and display the range values while printing.                                                
 <code style="color: red"> shape </code> --> Get the Shape of an Array​​, NumPy arrays have an attribute called shape that returns a tuple with each index having the number of corresponding elements.   
