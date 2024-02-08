@@ -10,12 +10,12 @@ You can install numpy package in VS Code using the following command in terminal
 
 ![](https://github.com/Sudippdn/Numpy/blob/main/Image/installNumpy.png)
 
-## How to import NumPy in your python file?
+### How to import NumPy in your python file?
 TO import NumPy module in your, use the following code:
 
 ![](https://github.com/Sudippdn/Numpy/blob/main/Image/importNumpy.png)
 
-## Array in NumPy
+### Array in NumPy
 You can implement array in NumPy by passing list inside the argument(paranthesis).
 
 ![](https://github.com/Sudippdn/Numpy/blob/main/Image/ArrayinNumpy.png)
@@ -26,7 +26,7 @@ a1 = np.array([1,2,3])
 a2 = a1 * np.array([1,2,3])
 print(a1,a2) # output = [1 2 3] [1 4 9]
 ```
-># Array Creation in NumPy
+>## Array Creation in NumPy
 >
 >There are 6 general mechanisms for creating arrays:
 >- Conversion from other Python structures (i.e. lists and tuples)
@@ -36,22 +36,22 @@ print(a1,a2) # output = [1 2 3] [1 4 9]
 >- Creating arrays from raw bytes through the use of strings or buffers
 >- Use of special library functions (e.g., random)
 
-# ![Differnce between numpy and list](https://github.com/Sudippdn/Numpy)
+### ![Differnce between numpy and list](https://github.com/Sudippdn/Numpy)
 
-## Dot product between python list and NumPy array
-### a. Dot Product using list
+### Dot product between python list and NumPy array
+#### a. Dot Product using list
 ```python
 dot = 0
 for i in range(len(l1)):
     dot += l1[i] * l2[i]
 print(dot)
 ```
-### b. Dot product using numpy
+#### b. Dot product using numpy
 ```python
 dot = np.dot(a1,a2)
 print(dot)  # output = 36
 ```
-## Comparing execution Time
+#### Comparing execution Time
 ```python
 import numpy as np 
 
@@ -92,10 +92,10 @@ print("np.dot", t2)
 print("ratio:", t1/t2)
 print(" ")
 ```
-#### *While runing the above code, if is found that array is 125+ times faster than Python list*
+##### _While runing the above code, if is found that array is 125+ times faster than Python list_
 ![](https://github.com/Sudippdn/Numpy/blob/main/Image/LvAExecution%20TIme.png)
 
-## arnage, shape and reshape
+### shape and reshape
                                               
 <code style="color: red"> shape </code> --> NumPy arrays have an attribute called shape that returns a tuple with each index having the number of corresponding element, which means that the shape function will give the dimention of the dataset in NumPy.
 
@@ -112,27 +112,27 @@ print(c)
             [[ 6  7  8  9]
              [10 11 12 13]]
 ```
-Numpy array slicing
+#### Numpy array slicing
 ```python
 print(a[0,:]) # outputs: [1 6 2]
 print(a[:,0]) # outputs [1,3]
 ```
 ![](https://github.com/Sudippdn/Numpy/blob/main/Image/slicing.png)
-### Transpose matrix
+#### Transpose matrix
 ```python
 print(a.T) # transpose array, outputs: [[1 3]
                                     #   [6 4]
                                     #   [2 3]]
 ```
-## Array attributes of NumPy
+### Array attributes of NumPy
 This section covers the ndim, ndmin, shape, size, dig, and dtype attributes of an array.
-## diag
-### For 1d array
+### diag
+#### For 1d array
 This will give digonals matrix of a. In this function, when 1D array is passed, it will create a n x n diagonal matrix
 
 ![](https://github.com/Sudippdn/Numpy/blob/main/Image/ndiag%20for%201-D%20array.png)
 
-### For multidimentional array
+#### For multidimentional array
 When we pass multi-dimentional array in diag, it will take a diagonal elements to make diagonal matrix which can be seen from the picture below:
 
 ![](https://github.com/Sudippdn/Numpy/blob/main/Image/ndiag%20for%20multi-D%20array.png)
@@ -142,23 +142,23 @@ c = np.diag(a) # this will give digonals matrix of a
 print(np.diag(a))  
 ```
 ![](https://github.com/Sudippdn/Numpy/blob/main/Image/ndiag%20for%201-D%20array.png)
-### Arrange data
+#### Arrange data
 ```python
 d = np.arange(1,9)
 print(d)
 ```
-### Reshape 
+#### Reshape 
 ```python
 print(d.shape)
 e = d.reshape(2,4) # this will shape the matrix into 2x4 matrix
 print(e)
 ```
-### arange
+#### arange
 <code style="color: red"> np.arrange(starting, ending) </code> --> takes two attributes and display the range values while printing.  
 
 ![](https://github.com/Sudippdn/Numpy/blob/main/Image/arange%20and%20reshape.png)
 
-## EigenValue and EigenVectors
+### EigenValue and EigenVectors
 Numpy is widely used in mathematics and this python library makes it easy to calculate eigenValue and eigenVectosrs
 ```python
 import numpy as np 
@@ -169,7 +169,7 @@ print(eigenvalues)
 print(eigenvectors)
 ```
 
-## Linear Algebra
+### Linear Algebra
 ```python
 import numpy as np 
 from timeit import default_timer as timer 
