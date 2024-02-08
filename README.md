@@ -125,14 +125,14 @@ print(a.T) # transpose array, outputs: [[1 3]
                                     #   [2 3]]
 ```
 ### Array attributes of NumPy
-This section covers the ndim, ndmin, shape, size, dig, and dtype attributes of an array.
+This section covers the ndim, ndmin,size, dig, and dtype attributes of an array.
 ### diag
-#### For 1d array
+#### - For 1d array
 This will give digonals matrix of a. In this function, when 1D array is passed, it will create a n x n diagonal matrix
 
 ![](https://github.com/Sudippdn/Numpy/blob/main/Image/ndiag%20for%201-D%20array.png)
 
-#### For multidimentional array
+#### - For multidimentional array
 When we pass multi-dimentional array in diag, it will take a diagonal elements to make diagonal matrix which can be seen from the picture below:
 
 ![](https://github.com/Sudippdn/Numpy/blob/main/Image/ndiag%20for%20multi-D%20array.png)
@@ -142,18 +142,18 @@ c = np.diag(a) # this will give digonals matrix of a
 print(np.diag(a))  
 ```
 ![](https://github.com/Sudippdn/Numpy/blob/main/Image/ndiag%20for%201-D%20array.png)
-#### Arrange data
+#### - Arrange data
 ```python
 d = np.arange(1,9)
 print(d)
 ```
-#### Reshape 
+#### - Reshape 
 ```python
 print(d.shape)
 e = d.reshape(2,4) # this will shape the matrix into 2x4 matrix
 print(e)
 ```
-#### arange
+#### - arange
 <code style="color: red"> np.arrange(starting, ending) </code> --> takes two attributes and display the range values while printing.  
 
 ![](https://github.com/Sudippdn/Numpy/blob/main/Image/arange%20and%20reshape.png)
