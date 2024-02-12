@@ -1,4 +1,4 @@
-##### *I will be uploading NumPy documentations here*
+###### *I will be uploading NumPy documentations here*
 <img src = "https://github.com/Sudippdn/Numpy/blob/main/Image/logo.png" height = 400, breadth = 500>
 
 # NumPy
