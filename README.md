@@ -1,5 +1,5 @@
 ###### *I will be uploading NumPy documentations here*
-<img src = "https://github.com/Sudippdn/Numpy/blob/main/Image/logo.png" height = 400, breadth = 500>
+<img src = "https://github.com/Sudippdn/Numpy/blob/main/Image/logo.png" height = 200, breadth = 200>
 
 [TABLE OF CONTENTS](https://github.com/Sudippdn/Numpy)
 
