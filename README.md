@@ -1,7 +1,25 @@
 ###### *I will be uploading NumPy documentations here*
 <img src = "https://github.com/Sudippdn/Numpy/blob/main/Image/logo.png" height = 400, breadth = 500>
+### TABLE OF CONTENTS
 
-# NumPy
+S.N.| Topics
+----|--------
+1   | [Introduction](#Introduction)
+2   | <a href = "#Installation">Installation</a>
+3   | <a href = "#Import">Import Numpy</a>
+4   | <a href = "#Array">NumPy Array</a>
+5   | <a href = "#making">Making Array</a>
+6   | <a href = "#comparison">Comparison Between Array and Numpy</a>
+7   | <a href = "#shape_reshape">Shape and Reshape in NumPy</a>
+8   | <a href = "#slicing">NumPy Array Slicing</a>
+9   | <a href = "#transpose">Transpose of Matrix in NumPy</a>
+10  | <a href = "#"></a>
+11  | 
+
+
+<a name = "Introduction"></a>
+# Introduction
+
 <code style="color: red"> Numpy </code>
 (Numerical Python) is a python library that provides multidimentional array. Numpy has ndarray at its core which encapsulated n-dimentional array of the homogeneous data type. In the this library, we can differenciate between array and list and while calculating the execution time, we found numpy executes more than 180 times faster than list. It can be use to calculate eigen values and eigenvectors of a matrices. Numpy also contais in-build function to interpret linear algebra which are shown below along with the examples.
 
