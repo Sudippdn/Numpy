@@ -15,7 +15,7 @@ S.N.| Topics
 8   | [NumPy Array Slicing](#slicing)
 9   | [Transpose of Matrix in NumPy](#transpose)
 10  | [Diagonal](#diag)
-11  | [Arrange](#arrange)
+11  | [Arange](#arange)
 12  | [Eigen Value and Eigen Vector](#EvEV)
 13  | [Linear Algebra](#LA)
 14  | [Timing Comparison](#timing_comparison)
@@ -27,7 +27,7 @@ S.N.| Topics
 <code style="color: red"> Numpy </code>
 (Numerical Python) is a python library that provides multidimentional array. Numpy has ndarray at its core which encapsulated n-dimentional array of the homogeneous data type. In the this library, we can differenciate between array and list and while calculating the execution time, we found numpy executes more than 180 times faster than list. It can be use to calculate eigen values and eigenvectors of a matrices. Numpy also contais in-build function to interpret linear algebra which are shown below along with the examples.
 
-<a name = "install"></a>
+<a name = "installation"></a>
 ## How to install NumPy in IDE?
 You can install numpy package in VS Code using the following command in terminal but first you should have pip install in the same path of your python file.
 
@@ -186,6 +186,8 @@ print(d.shape)
 e = d.reshape(2,4) # this will shape the matrix into 2x4 matrix
 print(e)
 ```
+
+<a name = "arange"></a>
 #### - arange
 <code style="color: red"> np.arrange(starting, ending) </code> --> takes two attributes and display the range values while printing.  
 
