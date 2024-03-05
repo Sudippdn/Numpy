@@ -1,20 +1,24 @@
 ###### *I will be uploading NumPy documentations here*
 <img src = "https://github.com/Sudippdn/Numpy/blob/main/Image/logo.png" height = 400, breadth = 500>
-### TABLE OF CONTENTS
+
+[TABLE OF CONTENTS](https://github.com/Sudippdn/Numpy)
 
 S.N.| Topics
 ----|--------
 1   | [Introduction](#Introduction)
-2   | <a href = "#Installation">Installation</a>
-3   | <a href = "#Import">Import Numpy</a>
-4   | <a href = "#Array">NumPy Array</a>
-5   | <a href = "#making">Making Array</a>
-6   | <a href = "#comparison">Comparison Between Array and Numpy</a>
-7   | <a href = "#shape_reshape">Shape and Reshape in NumPy</a>
-8   | <a href = "#slicing">NumPy Array Slicing</a>
-9   | <a href = "#transpose">Transpose of Matrix in NumPy</a>
-10  | <a href = "#"></a>
-11  | 
+2   | [Installation](#installation)
+3   | [Import Numpy](#import)
+4   | [NumPy Array](#npArray)
+5   | [Making Array](#making_array)
+6   | [Comparison Between Array and Numpy](#comparison)
+7   | [Shape and Reshape in NumPy](#shape_reshape)
+8   | [NumPy Array Slicing](#slicing)
+9   | [Transpose of Matrix in NumPy](#transpose)
+10  | [Diagonal](#diag)
+11  | [Arrange](#arrange)
+12  | [Eigen Value and Eigen Vector](#EvEV)
+13  | [Linear Algebra](#LA)
+14  | [Timing Comparison](#timing_comparison)
 
 
 <a name = "Introduction"></a>
@@ -23,16 +27,19 @@ S.N.| Topics
 <code style="color: red"> Numpy </code>
 (Numerical Python) is a python library that provides multidimentional array. Numpy has ndarray at its core which encapsulated n-dimentional array of the homogeneous data type. In the this library, we can differenciate between array and list and while calculating the execution time, we found numpy executes more than 180 times faster than list. It can be use to calculate eigen values and eigenvectors of a matrices. Numpy also contais in-build function to interpret linear algebra which are shown below along with the examples.
 
+<a name = "install"></a>
 ## How to install NumPy in IDE?
 You can install numpy package in VS Code using the following command in terminal but first you should have pip install in the same path of your python file.
 
 ![](https://github.com/Sudippdn/Numpy/blob/main/Image/installNumpy.png)
 
+<a name = "import"></a>
 ### How to import NumPy in your python file?
 TO import NumPy module in your, use the following code:
 
 ![](https://github.com/Sudippdn/Numpy/blob/main/Image/importNumpy.png)
 
+<a name = "npArray"></a>
 ### Array in NumPy
 You can implement array in NumPy by passing list inside the argument(paranthesis).
 
@@ -44,6 +51,8 @@ a1 = np.array([1,2,3])
 a2 = a1 * np.array([1,2,3])
 print(a1,a2) # output = [1 2 3] [1 4 9]
 ```
+
+<a name = "making_array"></a>
 >## Array Creation in NumPy
 >
 >There are 6 general mechanisms for creating arrays:
@@ -54,7 +63,8 @@ print(a1,a2) # output = [1 2 3] [1 4 9]
 >- Creating arrays from raw bytes through the use of strings or buffers
 >- Use of special library functions (e.g., random)
 
-### ![Differnce between numpy and list](https://github.com/Sudippdn/Numpy)
+<a name = "comparison"></a>
+### [Differnce between numpy and list](https://github.com/Sudippdn/Numpy)
 
 ### Dot product between python list and NumPy array
 #### a. Dot Product using list
@@ -113,6 +123,7 @@ print(" ")
 ##### _While runing the above code, if is found that array is 125+ times faster than Python list_
 ![](https://github.com/Sudippdn/Numpy/blob/main/Image/LvAExecution%20TIme.png)
 
+<a name = "shape_reshape"></a>
 ### shape and reshape
                                               
 <code style="color: red"> shape </code> --> NumPy arrays have an attribute called shape that returns a tuple with each index having the number of corresponding element, which means that the shape function will give the dimention of the dataset in NumPy.
@@ -130,12 +141,16 @@ print(c)
             [[ 6  7  8  9]
              [10 11 12 13]]
 ```
+
+<a name = "slicing"></a>
 #### Numpy array slicing
 ```python
 print(a[0,:]) # outputs: [1 6 2]
 print(a[:,0]) # outputs [1,3]
 ```
 ![](https://github.com/Sudippdn/Numpy/blob/main/Image/slicing.png)
+
+<a name = "transpose"></a>
 #### Transpose matrix
 ```python
 print(a.T) # transpose array, outputs: [[1 3]
@@ -160,7 +175,7 @@ c = np.diag(a) # this will give digonals matrix of a
 print(np.diag(a))  
 ```
 ![](https://github.com/Sudippdn/Numpy/blob/main/Image/ndiag%20for%201-D%20array.png)
-#### - Arrange data
+#### - Arange data
 ```python
 d = np.arange(1,9)
 print(d)
@@ -176,6 +191,7 @@ print(e)
 
 ![](https://github.com/Sudippdn/Numpy/blob/main/Image/arange%20and%20reshape.png)
 
+<a name = "EvEV"></a>
 ### EigenValue and EigenVectors
 Numpy is widely used in mathematics and this python library makes it easy to calculate eigenValue and eigenVectosrs
 ```python
@@ -186,7 +202,7 @@ eigenvalues, eigenvectors = np.linalg.eig(a)
 print(eigenvalues)
 print(eigenvectors)
 ```
-
+<a name = "LA"></a>
 ### Linear Algebra
 ```python
 import numpy as np 
@@ -208,6 +224,8 @@ def solve():
     answer = np.linalg.solve(A,b)
     print(answer)
 ```
+
+<a name = "timing_comparison"></a>
 ### timer section
 ```python
 from linear_system import dot, solve
